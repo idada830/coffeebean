@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+/* index css */
+
+/* 
+구글 웹폰트 
+
+1) 영문 :
+font-family: "Merriweather", serif;
+Use a value from 300 to 900
+
+2) 한글
+font-family: "Nanum Gothic", sans-serif;
+font-weight: 400 | 700 | 800;
+
+*/
+
+/*** reset ***/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+}
+ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+li {
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+header {}
+header .header-top {
+    height: 40px;
+    font-size: 18px;
+
+    background-color: #ccc;
+}
+header .header-top .inner-header-top {
+    width: 1280px;
+    height: 40px;
+    margin: 0 auto;
+
+    position: relative; /* 커피콩 아이콘의 기준 */
+}
+
+header .header-top ul {
+    margin-right: 70px;
+    line-height: 40px;
+    float: right;
+
+    /* outline: 2px solid blue; */
+}
+header .header-top ul li {
+    padding-left: 15px;
+
+    float: left;
+}
+header .header-top ul li a {
+    color: rgb(47,28,17);
+}
+
+header .header-top .coffee-icon {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(47,28,17);
+
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+header .header-top .coffee-icon img {
+    padding: 9px 14px;
+}
+
+header .header-bottom {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 10px 0;
+ 
+    /* outline: 3px solid red; */
+}
+header .header-bottom .logo {
+    padding: 10px 0;
+    float: left;
+
+    /* outline: 2px solid blue; */
+}
+header .header-bottom .logo a {
+    display: block;
+}
+header .header-bottom .logo a img {
+    display: block;
+}
+
+header .header-bottom nav {
+    float: left;
+    margin: 0 120px 0 70px;
+    line-height: 89px;
+
+    /* outline: 2px solid blue; */
+}
+header .header-bottom nav ul {
+    
+}
+header .header-bottom nav ul li {
+    margin-right: 25px;
+}
+header .header-bottom nav ul li a {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(47,28,17);
+}
+
+header .header-bottom .search {
+    float: left;
+    position: relative;
+    line-height: 30px;
+
+    /* outline: 2px solid blue; */
+}
+header .header-bottom .search .search-txt {
+    border: none;
+}
+header .header-bottom .search .search-txt legend {
+    font-size: 0;
+}
+header .header-bottom .search .search-txt input {
+    margin-right: 25px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+}
+header .header-bottom .search input[type="submit"] {
+    width: 20px;
+    height: 20px;
+    border: none;
+
+    background-image: url(../img/ico_search.png);
+    font-size: 0;
+
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    cursor: pointer;
+}
+
+main {
+    font-size: 0;
+}
+main .forest {
+    width: 1900px;
+    height: 700px;
+    margin: 0 auto;
+
+    background-image: url(../img/main_forest.jpg);
+}
+main .event {
+    width: 1900px;
+    height: 400px;
+    margin: 0 auto;
+
+    background-image: url(../img/main_event.jpg);
+}
+
+section {}
+section .section-top {
+    width: 1280px;
+    margin: 0 auto;
+}
+section .pick {
+    margin-top: 70px;
+
+    /* outline: 3px solid red; */
+}
+section .pick h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(207,102,26);
+
+    /* outline: 1px solid blue; */
+}
+
+section .pick .md {
+    margin-top: 30px;
+}
+.md ul {}
+.md ul li {
+    width: 25%;
+
+    /* outline: 1px solid blue; */
+}
+.md ul li a {
+    display: block;
+}
+.md ul li a img {
+    padding: 0 10px;
+}
+
+.md ul li p {
+    text-align: center;
+}
+.md ul li p span {
+    display: block;
+}
+.md ul li p span:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(47,28,17);
+}
+.md ul li p span:nth-child(2) {
+    margin: 10px 0 5px;
+    font-weight: 300;
+}
+.md ul li p span:last-child {
+    font-weight: 500;
+    color: rgb(207,102,26);
+}
+
+section .new {
+    margin-top: 100px;
+
+    /* outline: 3px solid red; */
+}
+section .new h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(207,102,26);
+
+    /* outline: 1px solid blue; */
+}
+
+section .new .new-menu {
+    margin: 30px 0 70px;
+}
+.new-menu ul {}
+.new-menu ul li {}
+.new-menu ul li:first-child {}
+.new-menu ul li:nth-child(2) {
+    margin: 0 69.93px;
+}
+.new-menu ul li:last-child {}
+
+.new-menu ul li a {}
+.new-menu ul li a img {}
+
+.new-menu ul li p {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(207,102,26);
+}
+
+.section-bottom {
+    margin-top: 50px;
+    background-color: rgb(124,81,161);
+}
+.section-bottom .instagram {
+    width: 1280px;
+    margin: 0 auto;
+    padding-top: 70px;
+
+    outline: 3px solid blue;
+}
+.instagram h2 {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.instagram h2 span {}
+
+.instagram .content {
+    margin-bottom: 30px;
+}
+.instagram .content ul {}
+.instagram .content ul li {
+    width: 16.66%;
+    /* outline: 2px solid yellowgreen; */
+}
+.instagram .content ul li a  {
+    display: block;
+}
+.instagram .content ul li a img {
+    width: 213.33px;
+    height: 213.33px;
+    display: block;
+}
+
+.instagram p {
+    width: 450px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto 50px;
+
+    background-color: rgb(243,130,0);
+    color: #fff;
+}
+
+footer {
+    background-color: #ccc;
+}
+.footer-top {
+    width: 1280px;
+    margin: 50px auto;
+    border-bottom: 1px solid #333;
+
+    /* outline: 3px solid red; */
+}
+.footer-top div {
+    width: 16.66%;
+    margin-bottom: 20px;
+    float: left;
+
+    /* outline: 1px solid blue; */
+}
+
+.footer-top h2 {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(207,102,26);
+}
+.footer-top ul {}
+.footer-top ul li {
+    float: none;
+}
+.footer-top ul li a {
+    color: #333;
+}
+
+footer .footer-bottom {
+    width: 1280px;
+    margin: 30px auto 40px;
+    position: relative;
+
+    outline: 3px solid red;
+}
+.footer-bottom .links {}
+.footer-bottom .links ul {}
+.footer-bottom .links ul li {
+    margin-right: 30px;
+
+    outline: 1px solid blue;
+}
+.footer-bottom .links ul li::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer-bottom .links ul li a {
+    color: #333;
+}
+.footer-bottom p {
+    color: #333;
+}
+
+.footer-bottom .sns {
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+.footer-bottom .sns ul {}
+.footer-bottom .sns ul li {
+    margin-left: 10px;
+}
+.footer-bottom .sns ul li a {
+    display: block;
+}
+.footer-bottom .sns ul li a img {
+    display: block;
+}
